@@ -23,8 +23,18 @@ public class Heuristico implements HeuristicFunction  {
 	public double getHeuristicValue(Object state) {
 		Estado es = (Estado) state;
 		HashMap<Integer,Integer> g = es.getGrafo();
-		boolean[] visitados= new boolean[es.numSensores()];
-		for(int i=0; i< visitados.length;++i) visitados[i]=false;
+		int[] referenciasS = new int[es.numSensores()];
+		int[] referenciasC = new int[es.numCentros()];
+		double[] datosAcomS = new double[es.numSensores()];
+		double[] datosAcomC = new double[es.numCentros()];
+		for(int i=0; i< referenciasS.length;++i) {
+			referenciasS[i]=0;
+			datosAcomS[i]=es.getSensor(i).getCapacidad();
+		}
+		for(int i=0; i< referenciasC.length;++i) {
+			referenciasC[i]=0;
+			datosAcomC[i]=0;
+		}
 		double coste=0;
 		double datos=0;
 		for (int i:g.keySet()){
@@ -33,20 +43,25 @@ public class Heuristico implements HeuristicFunction  {
 			double sumaparcial=0;
 			int num=0;
 			while (n >=0) {
-				if (visitados[n]) return -1;
-				visitados[n]=true;
+				referenciasS[n]++;
+				if (referenciasS[n]>3) return -1;
 				Sensor s2=es.getSensor(n);
 				double dat =s1.getCapacidad();
 				double dist = distancia(s1.getCoordX(), s1.getCoordY(), s2.getCoordX(), s2.getCoordY());
+				datosAcomS[n]+=dat;
+				if(datosAcomS[n]>s2.getCapacidad()*3) return -1;
 				sumaparcial+=dat;
 				coste += dist*dist*sumaparcial;
-				visitados[n]=true;
 				s1=s2;
 				n=g.get(n);
 			}
+			referenciasC[-n+1]++;
+			if (referenciasC[-n+1]>25) return -1;
 			Centro c= es.getCentro(-n+1);
 			double dat =s1.getCapacidad();
 			double dist = distancia(s1.getCoordX(), s1.getCoordY(), c.getCoordX(), c.getCoordY());
+			datosAcomC[-n+1]+=dat;
+			if(datosAcomS[-n+1]>150) return -1;
 			sumaparcial+=dat;
 			datos+=dat;
 			coste += dist*dist*sumaparcial;

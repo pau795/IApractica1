@@ -9,7 +9,8 @@ public class Estado {
 	
 	static Sensores s;
 	static CentrosDatos d;
-	HashMap<Integer, Integer> GDA;
+	HashMap<Integer, Integer> GDA; 	//Grafo Dirigido Aciclico. Relaciona identificadores <Sensor, Destino>
+									// Si Destino >= 0, Destino Codifica un sensor. Sino, codifica un Centro
 	
 	public Estado(HashMap<Integer, Integer> g, Sensores s, CentrosDatos d){
 		Estado.s=s;
@@ -20,11 +21,11 @@ public class Estado {
 		}
 	}
 	
-	public Estado (int ns, int nc,int seed){
-		s = new Sensores(ns, seed);
-		d = new CentrosDatos(nc, seed);
+	public Estado (int ns, int nc,int seed){		//Propuesta de solucion inicial.
+		s = new Sensores(ns, seed);					//Se conecta cada sensor i a un centro c respecto i mod num_centros
+		d = new CentrosDatos(nc, seed);				// 
 		for(int i=0; i<ns; ++i){
-			GDA.put(i, -(i%nc));
+			GDA.put(i, -(i%nc)-1);
 		}
 	}
 	
