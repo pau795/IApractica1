@@ -35,6 +35,13 @@ public class Estado {
 	public int numCentros(){
 		return d.size();
 	}
+	
+	public Sensores getSensores(){
+		return s;
+	}
+	public CentrosDatos getCentros(){
+		return d;
+	}
 
 	
 	public Sensor getSensor(int pos){
@@ -52,6 +59,8 @@ public class Estado {
 	void intercambia(int fuente, int destino){
 		GDA.put(fuente, destino);
 	}
+	
+	
 }
 
 
