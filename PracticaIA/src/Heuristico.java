@@ -1,4 +1,3 @@
-
 import java.util.HashMap;
 
 import IA.Red.Centro;
@@ -27,8 +26,10 @@ public class Heuristico implements HeuristicFunction  {
 		int[] referenciasC = new int[es.numCentros()];
 		double[] datosAcomS = new double[es.numSensores()];
 		double[] datosAcomC = new double[es.numCentros()];
+		boolean[] visitados = new boolean[es.numSensores()];
 		for(int i=0; i< referenciasS.length;++i) {
 			referenciasS[i]=0;
+			visitados[i]=false;
 			datosAcomS[i]=es.getSensor(i).getCapacidad();
 		}
 		for(int i=0; i< referenciasC.length;++i) {
@@ -38,37 +39,37 @@ public class Heuristico implements HeuristicFunction  {
 		double coste=0;
 		double datos=0;
 		for (int i:g.keySet()){
-			Sensor s1 = es.getSensor(i);
-			int n= g.get(i);
-			double sumaparcial=0;
-			int num=0;
-			while (n >=0) {
-				referenciasS[n]++;
-				if (referenciasS[n]>3) return -1;
-				Sensor s2=es.getSensor(n);
+			if (!visitados[i]){
+				visitados[i]=true;
+				Sensor s1 = es.getSensor(i);
+				int n= g.get(i);
+				double sumaparcial=0;
+				while (n >=0) {
+					visitados[n]=true;
+					referenciasS[n]++;
+					if (referenciasS[n]>3) return 999999999;
+					Sensor s2=es.getSensor(n);
+					double dat =s1.getCapacidad();
+					double dist = distancia(s1.getCoordX(), s1.getCoordY(), s2.getCoordX(), s2.getCoordY());
+					datosAcomS[n]+=dat;
+					if(datosAcomS[n]>s2.getCapacidad()*3) return 999999999;
+					sumaparcial+=dat;
+					coste += dist*dist*sumaparcial;
+					s1=s2;
+					n=g.get(n);
+				}
+				referenciasC[-n-1]++;
+				if (referenciasC[-n-1]>25) return 999999999;
+				Centro c= es.getCentro(-n-1);
 				double dat =s1.getCapacidad();
-				double dist = distancia(s1.getCoordX(), s1.getCoordY(), s2.getCoordX(), s2.getCoordY());
-				datosAcomS[n]+=dat;
-				if(datosAcomS[n]>s2.getCapacidad()*3) return -1;
+				double dist = distancia(s1.getCoordX(), s1.getCoordY(), c.getCoordX(), c.getCoordY());
+				datosAcomC[-n-1]+=dat;
+				if(datosAcomS[-n-1]>150) return 999999999;
 				sumaparcial+=dat;
+				datos+=dat;
 				coste += dist*dist*sumaparcial;
-				s1=s2;
-				n=g.get(n);
 			}
-			referenciasC[-n+1]++;
-			if (referenciasC[-n+1]>25) return -1;
-			Centro c= es.getCentro(-n+1);
-			double dat =s1.getCapacidad();
-			double dist = distancia(s1.getCoordX(), s1.getCoordY(), c.getCoordX(), c.getCoordY());
-			datosAcomC[-n+1]+=dat;
-			if(datosAcomS[-n+1]>150) return -1;
-			sumaparcial+=dat;
-			datos+=dat;
-			coste += dist*dist*sumaparcial;
 		}
 		return coste/datos;
 	  }
-	
-
-  
 }
