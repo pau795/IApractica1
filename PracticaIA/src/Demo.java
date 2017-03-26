@@ -14,7 +14,7 @@ import aima.search.informed.SimulatedAnnealingSearch;
 public class Demo {
     
     public static void main(String[] args){
-        Estado TSPB=new Estado(100,4,1234);
+        Estado TSPB=new Estado(100,4,1234,1234);
         TSPHillClimbingSearch(TSPB);
         //TSPSimulatedAnnealingSearch(TSPB);
     }
