@@ -16,20 +16,24 @@ public class Sucesores implements SuccessorFunction{
         HashMap<Integer,Integer> g = e.getGrafo();
         for(int i: g.keySet()){
         	for(int j=0; j<e.numSensores();++j){
-        		Estado e1= new Estado(e.getGrafo(), e.getSensores(), e.getCentros());
-        		e1.intercambia(i, j);
-        		double v=h.getHeuristicValue(e1);
-        		String S = "intercambio (" + i + ", " + j + ") " + "Coste:" + v+e1.getGrafo().toString();
-        		r.add(new Successor(S, e1));		
+        		if (j!=i){
+	        		Estado e1= new Estado(e.getGrafo(), e.getSensores(), e.getCentros());
+	        		e1.intercambia(i, j);
+	        		double v=h.getHeuristicValue(e1);
+	        		String S = "intercambio (" + i + ", " + j + ") " + "Coste:" + v+e1.getGrafo().toString();
+	        		r.add(new Successor(S, e1));		
+        		}
         	}
         	for(int j=0; j<e.numCentros();++j){
         		Estado e1= new Estado(e.getGrafo(), e.getSensores(), e.getCentros());
         		e1.intercambia(i, -j-1);
         		double v=h.getHeuristicValue(e1);
-        		String S = "intercambio (" + i + ", " + j + ") " + "Coste:" + v+e1.getGrafo().toString();
+        		String S = "intercambio (" + i + ", " + (-j-1) + ") " + "Coste:" + v+e1.getGrafo().toString();
         		r.add(new Successor(S, e1));		
         	}
         }
         return r;
 	}
+	
+
 }
