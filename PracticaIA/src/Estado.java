@@ -22,9 +22,9 @@ public class Estado {
 		}
 	}
 	
-	public Estado (int ns, int nc,int seed){		//Propuesta de solucion inicial.
-		s = new Sensores(ns, seed);			//Se conecta cada sensor i a un centro c respecto i mod num_centros
-		d = new CentrosDatos(nc, seed);
+	public Estado (int ns, int nc,int seedS, int seedC){		//Propuesta de solucion inicial.
+		s = new Sensores(ns, seedS);				//Se conecta cada sensor i a un centro c respecto i mod num_centros
+		d = new CentrosDatos(nc, seedC);
 		GDA = new HashMap<Integer, Integer>();
 		for(int i=0; i<ns; ++i){
 			GDA.put(i, -(i%nc)-1);
