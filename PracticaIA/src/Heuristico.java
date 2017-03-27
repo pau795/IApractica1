@@ -23,16 +23,13 @@ public class Heuristico implements HeuristicFunction  {
 	}
 	
 	public double distancia(int x1, int y1, int x2, int y2){
-		int xy1=x1-y1;
-		int xy2=x2-y2;
-		xy1*=xy1;
-		xy2*=xy2;
-		return Math.sqrt(xy1+xy2);
+		int xx1=x1-x2;
+		int yy2=y1-y2;
+		xx1*=xx1;
+		yy2*=yy2;
+		return Math.sqrt(xx1+yy2);
 	}
 	
-	public double coste(double dist, double dat){
-		return dist*dist*dat;
-	}
 	
 	public double getHeuristicValue(Object state) {
 		Estado es = (Estado) state;
@@ -71,59 +68,15 @@ public class Heuristico implements HeuristicFunction  {
 						datosAcomC[-apuntado-1]+=datosAcomS[i];
 						if(datosAcomC[-apuntado-1]>150) datosAcomC[-apuntado-1]=150;
 						dist = distancia(s1.getCoordX(), s1.getCoordY(), c.getCoordX(), c.getCoordY());
-					}
+					}					
 					coste += dist*dist*datosAcomS[i];
 					++num;
 					visitados[i]=true;
 				}
 			}
 		}
-
 		for(int i=0; i<es.numCentros();++i) datos+= datosAcomC[i];
 		return coste/datos;
 		
 	}
 }
-		
-		
-		
-		/*
-		for (int i:g.keySet()){
-			if (!visitados[i]){
-				visitados[i]=true;
-				Sensor s1 = es.getSensor(i);
-				int n= g.get(i);
-				double sumaparcial=0;
-				while (n >=0) {
-					visitados[n]=true;
-					referenciasS[n]++;
-					if (referenciasS[n]>3) return 999999999;
-					Sensor s2=es.getSensor(n);
-					double dat =s1.getCapacidad();
-					double dist = distancia(s1.getCoordX(), s1.getCoordY(), s2.getCoordX(), s2.getCoordY());
-					datosAcomS[n]+=dat;
-					if(datosAcomS[n]>s2.getCapacidad()*3) return 999999999;
-					sumaparcial+=dat;
-					coste += dist*dist*sumaparcial;
-					s1=s2;
-					n=g.get(n);
-				}
-				referenciasC[-n-1]++;
-				if (referenciasC[-n-1]>25) return 999999999;
-				Centro c= es.getCentro(-n-1);
-				double dat =s1.getCapacidad();
-				double dist = distancia(s1.getCoordX(), s1.getCoordY(), c.getCoordX(), c.getCoordY());
-				datosAcomC[-n-1]+=dat;
-				if(datosAcomS[-n-1]>150) return 999999999;
-				sumaparcial+=dat;
-				datos+=dat;
-				coste += dist*dist*sumaparcial;
-			}
-		}
-
-		return coste/datos;
-	  }*/
-
-	
-
-  
