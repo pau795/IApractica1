@@ -1,4 +1,4 @@
-; Mon May 15 00:37:32 CEST 2017
+; Fri May 19 00:45:09 CEST 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -29,6 +29,10 @@
 	(single-slot Ingrediente+principal
 		(type SYMBOL)
 		(allowed-values Carne Pescado Vegetales Pasta Arroz Pan Legumbres FrutosSecos Lacteos Marisco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ontologia_Class30000
+		(type SYMBOL)
 ;+		(cardinality 0 1)
 		(create-accessor read-write))
 	(single-slot pensado+para+poca+gente
@@ -70,6 +74,11 @@
 		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
+	(single-slot Cocina
+		(type SYMBOL)
+		(allowed-values Tradicional Moderna Regional Sibarita)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot Temporada
 		(type SYMBOL)
 		(allowed-values Primavera Verano Otono Invierno)
@@ -96,6 +105,10 @@
 		(create-accessor read-write))
 	(single-slot Precio
 		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot estilo
+		(type SYMBOL)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot Estilo
@@ -230,6 +243,11 @@
 (defclass Plato
 	(is-a Componente)
 	(role abstract)
+	(single-slot Cocina
+		(type SYMBOL)
+		(allowed-values Tradicional Moderna Regional Sibarita)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
 	(single-slot Cubierto
 		(type SYMBOL)
 		(allowed-values Tenedor Cuchara)
@@ -239,10 +257,6 @@
 		(type SYMBOL)
 		(allowed-values Carne Pescado Vegetales Pasta Arroz Pan Legumbres FrutosSecos Lacteos Marisco)
 ;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(multislot bebidas+compatibles
-		(type INSTANCE)
-;+		(allowed-classes Bebida)
 		(create-accessor read-write))
 	(single-slot Temporada
 		(type SYMBOL)
