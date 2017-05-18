@@ -1,0 +1,294 @@
+; Mon May 15 00:37:32 CEST 2017
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(multislot bebida
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(cardinality 1 3)
+		(create-accessor read-write))
+	(single-slot segundo+plato
+		(type INSTANCE)
+;+		(allowed-classes Segundo Primero%2FSegundo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot postre
+		(type INSTANCE)
+;+		(allowed-classes Postre)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Precio+de+venta
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Ingrediente+principal
+		(type SYMBOL)
+		(allowed-values Carne Pescado Vegetales Pasta Arroz Pan Legumbres FrutosSecos Lacteos Marisco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot pensado+para+poca+gente
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primer+plato
+		(type INSTANCE)
+;+		(allowed-classes Primero Primero%2FSegundo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Lactosa
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Cubierto
+		(type SYMBOL)
+		(allowed-values Tenedor Cuchara)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot bebidas+compatibles
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(create-accessor read-write))
+	(multislot ingredientes
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot temperatura
+		(type SYMBOL)
+		(allowed-values frio caliente)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Bebida+conjunta
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Temporada
+		(type SYMBOL)
+		(allowed-values Primavera Verano Otono Invierno)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Numero+comenasles
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Vino
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Celiaco
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Vegetariano
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Precio
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Estilo
+		(type SYMBOL)
+		(allowed-values Tradicional Moderno Regional Sibarita)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Evento
+	(is-a USER)
+	(role abstract)
+	(single-slot Temporada
+		(type SYMBOL)
+		(allowed-values Primavera Verano Otono Invierno)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Numero+comenasles
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Evento+Familiar
+	(is-a Evento)
+	(role abstract))
+
+(defclass Bautizo
+	(is-a Evento+Familiar)
+	(role concrete))
+
+(defclass Boda
+	(is-a Evento+Familiar)
+	(role concrete))
+
+(defclass Comunion
+	(is-a Evento+Familiar)
+	(role concrete))
+
+(defclass Aniversario
+	(is-a Evento+Familiar)
+	(role concrete))
+
+(defclass Despedida
+	(is-a Evento+Familiar)
+	(role concrete))
+
+(defclass Congreso
+	(is-a Evento)
+	(role abstract))
+
+(defclass Comida
+	(is-a Congreso)
+	(role concrete))
+
+(defclass Cena
+	(is-a Congreso)
+	(role concrete))
+
+(defclass Menu
+	(is-a USER)
+	(role concrete)
+	(single-slot Celiaco
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Vino
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Vegetariano
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Lactosa
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot bebida
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(cardinality 1 3)
+		(create-accessor read-write))
+	(single-slot Estilo
+		(type SYMBOL)
+		(allowed-values Tradicional Moderno Regional Sibarita)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Precio
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Bebida+conjunta
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primer+plato
+		(type INSTANCE)
+;+		(allowed-classes Primero Primero%2FSegundo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot segundo+plato
+		(type INSTANCE)
+;+		(allowed-classes Segundo Primero%2FSegundo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot postre
+		(type INSTANCE)
+;+		(allowed-classes Postre)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Componente
+	(is-a USER)
+	(role abstract)
+	(single-slot Precio+de+venta
+		(type FLOAT)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Plato
+	(is-a Componente)
+	(role abstract)
+	(single-slot Cubierto
+		(type SYMBOL)
+		(allowed-values Tenedor Cuchara)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Ingrediente+principal
+		(type SYMBOL)
+		(allowed-values Carne Pescado Vegetales Pasta Arroz Pan Legumbres FrutosSecos Lacteos Marisco)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot bebidas+compatibles
+		(type INSTANCE)
+;+		(allowed-classes Bebida)
+		(create-accessor read-write))
+	(single-slot Temporada
+		(type SYMBOL)
+		(allowed-values Primavera Verano Otono Invierno)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ingredientes
+		(type INSTANCE)
+;+		(allowed-classes Ingrediente)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot pensado+para+poca+gente
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot temperatura
+		(type SYMBOL)
+		(allowed-values frio caliente)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Postre
+	(is-a Plato)
+	(role concrete))
+
+(defclass Primero
+	(is-a Plato)
+	(role concrete))
+
+(defclass Segundo
+	(is-a Plato)
+	(role concrete))
+
+(defclass Primero%2FSegundo
+	(is-a Plato)
+	(role concrete))
+
+(defclass Bebida
+	(is-a Componente)
+	(role concrete))
+
+(defclass Ingrediente
+	(is-a USER)
+	(role concrete)
+	(single-slot Nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
