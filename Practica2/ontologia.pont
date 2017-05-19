@@ -1,4 +1,4 @@
-; Fri May 19 00:45:09 CEST 2017
+; Fri May 19 10:50:13 CEST 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -107,10 +107,6 @@
 		(type INTEGER)
 ;+		(cardinality 1 1)
 		(create-accessor read-write))
-	(single-slot estilo
-		(type SYMBOL)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(single-slot Estilo
 		(type SYMBOL)
 		(allowed-values Tradicional Moderno Regional Sibarita)
@@ -173,44 +169,10 @@
 (defclass Menu
 	(is-a USER)
 	(role concrete)
-	(single-slot Celiaco
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot Vino
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot Vegetariano
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot Lactosa
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
 	(multislot bebida
 		(type INSTANCE)
 ;+		(allowed-classes Bebida)
 		(cardinality 1 3)
-		(create-accessor read-write))
-	(single-slot Estilo
-		(type SYMBOL)
-		(allowed-values Tradicional Moderno Regional Sibarita)
-;+		(cardinality 0 1)
-		(create-accessor read-write))
-	(single-slot Precio
-		(type INTEGER)
-;+		(cardinality 1 1)
-		(create-accessor read-write))
-	(single-slot Bebida+conjunta
-		(type SYMBOL)
-		(allowed-values FALSE TRUE)
-;+		(cardinality 1 1)
 		(create-accessor read-write))
 	(single-slot primer+plato
 		(type INSTANCE)
@@ -276,6 +238,21 @@
 	(single-slot temperatura
 		(type SYMBOL)
 		(allowed-values frio caliente)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Celiaco
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Vegetariano
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot Lactosa
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
 ;+		(cardinality 1 1)
 		(create-accessor read-write)))
 

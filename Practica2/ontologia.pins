@@ -1,4 +1,4 @@
-; Fri May 19 00:45:09 CEST 2017
+; Fri May 19 10:50:13 CEST 2017
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -8,6 +8,7 @@
 
 ([ontologia_Class0] of  Primero%2FSegundo
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Carne)
@@ -19,17 +20,17 @@
 		[ontologia_Class18]
 		[ontologia_Class8]
 		[ontologia_Class10030])
+	(Lactosa TRUE)
 	(Nombre "Estofado")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 7.0)
 	(temperatura caliente)
-	(Temporada Invierno))
-
-([ontologia_Class1] of  Ingrediente
-)
+	(Temporada Invierno)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10000] of  Primero%2FSegundo
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Marisco)
@@ -41,11 +42,13 @@
 		[ontologia_Class10018]
 		[ontologia_Class20004]
 		[ontologia_Class20005])
+	(Lactosa TRUE)
 	(Nombre "Raviolis de gamba rojas y setas")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 62.4)
 	(temperatura caliente)
-	(Temporada Otono))
+	(Temporada Otono)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10001] of  Ingrediente
 
@@ -53,6 +56,7 @@
 
 ([ontologia_Class10002] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pasta)
@@ -68,10 +72,12 @@
 		[ontologia_Class10004]
 		[ontologia_Class10005]
 		[ontologia_Class50])
+	(Lactosa FALSE)
 	(Nombre "Lasana")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 8.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10003] of  Ingrediente
 
@@ -92,6 +98,7 @@
 
 ([ontologia_Class10008] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pasta)
@@ -105,9 +112,12 @@
 		[ontologia_Class10012]
 		[ontologia_Class63]
 		[ontologia_Class8])
+	(Lactosa FALSE)
 	(Nombre "Bolonesa canelones")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 9.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10009] of  Ingrediente
 
@@ -132,6 +142,7 @@
 
 ([ontologia_Class10014] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pasta)
@@ -142,9 +153,12 @@
 		[ontologia_Class62]
 		[ontologia_Class10018]
 		[ontologia_Class8])
+	(Lactosa FALSE)
 	(Nombre "Carbonara")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 4.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10015] of  Bebida
 
@@ -165,6 +179,7 @@
 
 ([ontologia_Class10019] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Ingrediente+principal Vegetales)
 	(ingredientes
@@ -176,9 +191,12 @@
 		[ontologia_Class10004]
 		[ontologia_Class62]
 		[ontologia_Class8])
+	(Lactosa FALSE)
 	(Nombre "Parmesana")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 6.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10020] of  Ingrediente
 
@@ -195,6 +213,7 @@
 
 ([ontologia_Class10023] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -209,10 +228,13 @@
 		[ontologia_Class68]
 		[ontologia_Class10028]
 		[ontologia_Class10010])
+	(Lactosa FALSE)
 	(Nombre "Pastiera")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 13.0)
-	(Temporada Primavera))
+	(temperatura frio)
+	(Temporada Primavera)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10024] of  Ingrediente
 
@@ -245,6 +267,7 @@
 
 ([ontologia_Class10031] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -255,11 +278,13 @@
 		[ontologia_Class10018]
 		[ontologia_Class8]
 		[ontologia_Class26])
-	(Nombre "Butifarra con mpngetes")
+	(Lactosa TRUE)
+	(Nombre "Butifarra con mongetes")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 6.9)
 	(temperatura caliente)
-	(Temporada Otono))
+	(Temporada Otono)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10032] of  Ingrediente
 
@@ -267,6 +292,7 @@
 
 ([ontologia_Class10033] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Arroz)
@@ -278,10 +304,12 @@
 		[ontologia_Class8]
 		[ontologia_Class10034]
 		[ontologia_Class43])
+	(Lactosa TRUE)
 	(Nombre "Arroz negro")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 7.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10034] of  Ingrediente
 
@@ -289,6 +317,7 @@
 
 ([ontologia_Class10035] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -307,10 +336,12 @@
 		[ontologia_Class10040]
 		[ontologia_Class64]
 		[ontologia_Class10041])
+	(Lactosa FALSE)
 	(Nombre "Pollo asado a la catalana")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 8.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10036] of  Ingrediente
 
@@ -338,6 +369,7 @@
 
 ([ontologia_Class10042] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -347,10 +379,12 @@
 		[ontologia_Class10018]
 		[ontologia_Class8]
 		[ontologia_Class10043])
+	(Lactosa FALSE)
 	(Nombre "Caprese")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 3.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10043] of  Ingrediente
 
@@ -358,6 +392,7 @@
 
 ([ontologia_Class10044] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pasta)
@@ -369,9 +404,12 @@
 		[ontologia_Class8]
 		[ontologia_Class10046]
 		[ontologia_Class10047])
+	(Lactosa FALSE)
 	(Nombre "Ravioles")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 6.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class10045] of  Ingrediente
 
@@ -387,6 +425,7 @@
 
 ([ontologia_Class10048] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -397,9 +436,12 @@
 		[ontologia_Class10050]
 		[ontologia_Class10051]
 		[ontologia_Class10052])
+	(Lactosa TRUE)
 	(Nombre "Tiramisu")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 7.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10049] of  Ingrediente
 
@@ -424,6 +466,7 @@
 
 ([ontologia_Class10054] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -436,9 +479,12 @@
 		[ontologia_Class64]
 		[ontologia_Class10056]
 		[ontologia_Class10057])
+	(Lactosa FALSE)
 	(Nombre "Baba")
+	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 5.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10055] of  Ingrediente
 
@@ -454,6 +500,7 @@
 
 ([ontologia_Class10058] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Tradicional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -466,9 +513,12 @@
 		[ontologia_Class10061]
 		[ontologia_Class10062]
 		[ontologia_Class10063])
+	(Lactosa FALSE)
 	(Nombre "Panacota")
+	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 5.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10059] of  Ingrediente
 
@@ -492,6 +542,7 @@
 
 ([ontologia_Class10064] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Pan)
@@ -501,9 +552,12 @@
 		[ontologia_Class64]
 		[ontologia_Class19]
 		[ontologia_Class27])
+	(Lactosa FALSE)
 	(Nombre "Sbrisolona")
+	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 6.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class10065] of  Bebida
 
@@ -545,6 +599,7 @@
 
 ([ontologia_Class14] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -562,10 +617,12 @@
 		[ontologia_Class20]
 		[ontologia_Class21]
 		[ontologia_Class22])
+	(Lactosa TRUE)
 	(Nombre "Ensalada catalana")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 5.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano FALSE))
 
 ([ontologia_Class15] of  Ingrediente
 
@@ -597,6 +654,7 @@
 
 ([ontologia_Class20000] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Legumbres)
@@ -604,14 +662,13 @@
 		[ontologia_Class30002]
 		[ontologia_Class5]
 		[ontologia_Class30003])
+	(Lactosa TRUE)
 	(Nombre "Lentejas con semiesferas de jamon")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 9.5)
 	(temperatura caliente)
-	(Temporada Invierno))
-
-([ontologia_Class20001] of  Ingrediente
-)
+	(Temporada Invierno)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20002] of  Ingrediente
 
@@ -631,6 +688,7 @@
 
 ([ontologia_Class20007] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Vegetales)
@@ -645,11 +703,13 @@
 		[ontologia_Class20015]
 		[ontologia_Class20016]
 		[ontologia_Class20017])
+	(Lactosa TRUE)
 	(Nombre "Primavera")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 28.2)
 	(temperatura frio)
-	(Temporada Primavera))
+	(Temporada Primavera)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20008] of  Bebida
 
@@ -690,6 +750,7 @@
 
 ([ontologia_Class20018] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -697,7 +758,6 @@
 		[ontologia_Class20073]
 		[ontologia_Class18]
 		[ontologia_Class45]
-		[ontologia_Class20075]
 		[ontologia_Class46]
 		[ontologia_Class30]
 		[ontologia_Class20076]
@@ -708,11 +768,13 @@
 		[ontologia_Class20041]
 		[ontologia_Class20080]
 		[ontologia_Class20081])
+	(Lactosa TRUE)
 	(Nombre "Gamo con anchoas y olivas negras")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 46.8)
 	(temperatura caliente)
-	(Temporada Otono))
+	(Temporada Otono)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20019] of  Bebida
 
@@ -726,9 +788,6 @@
 ([ontologia_Class20021] of  Ingrediente
 
 	(Nombre "Pimiento de azafran"))
-
-([ontologia_Class20022] of  Ingrediente
-)
 
 ([ontologia_Class20023] of  Ingrediente
 
@@ -761,6 +820,7 @@
 
 ([ontologia_Class20030] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -770,11 +830,13 @@
 		[ontologia_Class20033]
 		[ontologia_Class20034]
 		[ontologia_Class20035])
+	(Lactosa FALSE)
 	(Nombre "Canelon de berza pasiega y morcilla")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 25.6)
 	(temperatura frio)
-	(Temporada Invierno))
+	(Temporada Invierno)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20031] of  Ingrediente
 
@@ -798,6 +860,7 @@
 
 ([ontologia_Class20036] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -811,10 +874,12 @@
 		[ontologia_Class20017]
 		[ontologia_Class19]
 		[ontologia_Class20043])
+	(Lactosa FALSE)
 	(Nombre "Croqueta Joselito by Vía Láctea")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 15.3)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20037] of  Ingrediente
 
@@ -846,6 +911,7 @@
 
 ([ontologia_Class20044] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Vegetales)
@@ -859,21 +925,17 @@
 		[ontologia_Class20040]
 		[ontologia_Class20053]
 		[ontologia_Class20054])
+	(Lactosa FALSE)
 	(Nombre "Noquis melosos de patata, salsa cremosa de mantequilla y trufa negra")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 18.4)
 	(temperatura caliente)
-	(Temporada Verano))
+	(Temporada Verano)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20045] of  Ingrediente
 
 	(Nombre "Patata monalisa"))
-
-([ontologia_Class20046] of  Ingrediente
-)
-
-([ontologia_Class20047] of  Ingrediente
-)
 
 ([ontologia_Class20048] of  Ingrediente
 
@@ -891,9 +953,6 @@
 
 	(Nombre "Sal fina"))
 
-([ontologia_Class20052] of  Ingrediente
-)
-
 ([ontologia_Class20053] of  Ingrediente
 
 	(Nombre "Caldo blanco"))
@@ -904,6 +963,7 @@
 
 ([ontologia_Class20055] of  Primero%2FSegundo
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Vegetales)
@@ -915,10 +975,12 @@
 		[ontologia_Class3]
 		[ontologia_Class20058]
 		[ontologia_Class20059])
+	(Lactosa TRUE)
 	(Nombre "Nieve de tomate")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 21.7)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20056] of  Ingrediente
 
@@ -938,6 +1000,7 @@
 
 ([ontologia_Class20060] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pescado)
@@ -953,11 +1016,13 @@
 		[ontologia_Class20069]
 		[ontologia_Class20070]
 		[ontologia_Class20017])
+	(Lactosa TRUE)
 	(Nombre "Merlan rebozado, espinaca, curry y piquillos")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 30.5)
 	(temperatura caliente)
-	(Temporada Primavera))
+	(Temporada Primavera)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20062] of  Ingrediente
 
@@ -974,9 +1039,6 @@
 ([ontologia_Class20065] of  Ingrediente
 
 	(Nombre "Calota"))
-
-([ontologia_Class20066] of  Ingrediente
-)
 
 ([ontologia_Class20067] of  Ingrediente
 
@@ -996,6 +1058,7 @@
 
 ([ontologia_Class20071] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Marisco)
@@ -1014,24 +1077,17 @@
 		[ontologia_Class20027]
 		[ontologia_Class20083]
 		[ontologia_Class52])
+	(Lactosa TRUE)
 	(Nombre "Lago Ness")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 45.9)
 	(temperatura caliente)
-	(Temporada Verano))
-
-([ontologia_Class20072] of  Ingrediente
-)
+	(Temporada Verano)
+	(Vegetariano FALSE))
 
 ([ontologia_Class20073] of  Ingrediente
 
 	(Nombre "Lomo de gamo"))
-
-([ontologia_Class20074] of  Ingrediente
-)
-
-([ontologia_Class20075] of  Ingrediente
-)
 
 ([ontologia_Class20076] of  Ingrediente
 
@@ -1044,9 +1100,6 @@
 ([ontologia_Class20078] of  Ingrediente
 
 	(Nombre "Kuzu"))
-
-([ontologia_Class20079] of  Ingrediente
-)
 
 ([ontologia_Class20080] of  Ingrediente
 
@@ -1066,6 +1119,7 @@
 
 ([ontologia_Class20084] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -1081,10 +1135,12 @@
 		[ontologia_Class20051]
 		[ontologia_Class20091]
 		[ontologia_Class20092])
+	(Lactosa FALSE)
 	(Nombre "Patata moai y chimole")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 16.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20085] of  Ingrediente
 
@@ -1120,6 +1176,7 @@
 
 ([ontologia_Class20093] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -1130,10 +1187,12 @@
 		[ontologia_Class20096]
 		[ontologia_Class19]
 		[ontologia_Class68])
+	(Lactosa FALSE)
 	(Nombre "Petit Pots de Chocolate")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 8.9)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20094] of  Ingrediente
 
@@ -1149,6 +1208,7 @@
 
 ([ontologia_Class20097] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -1164,10 +1224,12 @@
 		[ontologia_Class20103]
 		[ontologia_Class68]
 		[ontologia_Class20104])
+	(Lactosa FALSE)
 	(Nombre "Flan de Cajeta con Gelatina de Cafe")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 6.7)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20098] of  Ingrediente
 
@@ -1199,6 +1261,7 @@
 
 ([ontologia_Class20105] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Tradicional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pan)
@@ -1216,10 +1279,12 @@
 		[ontologia_Class20110]
 		[ontologia_Class20111]
 		[ontologia_Class20016])
+	(Lactosa FALSE)
 	(Nombre "Mini Pastel de zanahoria con chocolate banado de crema de cafe")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 6.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20106] of  Ingrediente
 
@@ -1247,6 +1312,7 @@
 
 ([ontologia_Class20112] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -1257,10 +1323,12 @@
 		[ontologia_Class20114]
 		[ontologia_Class20115]
 		[ontologia_Class19])
+	(Lactosa FALSE)
 	(Nombre "Souffle de Queso Gorgonzola y Nuez")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 9.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20113] of  Ingrediente
 
@@ -1276,6 +1344,7 @@
 
 ([ontologia_Class20116] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Sibarita)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -1287,10 +1356,12 @@
 		[ontologia_Class20121]
 		[ontologia_Class20096]
 		[ontologia_Class20122])
+	(Lactosa FALSE)
 	(Nombre "Parfait de Chocolate Helado")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 7.9)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class20117] of  Ingrediente
 
@@ -1326,6 +1397,7 @@
 
 ([ontologia_Class23] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1336,10 +1408,12 @@
 		[ontologia_Class27]
 		[ontologia_Class4]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Caracoles a la llauna")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 9.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class24] of  Ingrediente
 
@@ -1359,6 +1433,7 @@
 
 ([ontologia_Class28] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1371,10 +1446,12 @@
 		[ontologia_Class8]
 		[ontologia_Class32]
 		[ontologia_Class33])
+	(Lactosa TRUE)
 	(Nombre "Fricando de ternera")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 12.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class29] of  Ingrediente
 
@@ -1398,6 +1475,7 @@
 
 ([ontologia_Class30005] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pescado)
@@ -1410,13 +1488,12 @@
 		[ontologia_Class66]
 		[ontologia_Class30007]
 		[ontologia_Class8])
+	(Lactosa FALSE)
 	(Nombre "Bacalao confitado al azafran y crema de gorgonzola")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 13.5)
-	(temperatura caliente))
-
-([ontologia_Class30006] of  Ingrediente
-)
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30007] of  Ingrediente
 
@@ -1424,6 +1501,7 @@
 
 ([ontologia_Class30008] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -1431,13 +1509,16 @@
 		[ontologia_Class20048]
 		[ontologia_Class10056]
 		[ontologia_Class10061])
+	(Lactosa FALSE)
 	(Nombre "Volovanes de nata y frutos rojos")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 7.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class30009] of  Primero%2FSegundo
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pescado)
@@ -1449,13 +1530,16 @@
 		[ontologia_Class66]
 		[ontologia_Class35]
 		[ontologia_Class10018])
+	(Lactosa TRUE)
 	(Nombre "Bacalao con salsa de pimientos rojos glaseados")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 15.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30010] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Arroz)
@@ -1467,13 +1551,16 @@
 		[ontologia_Class39]
 		[ontologia_Class77]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Nut Pulao")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 12.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano TRUE))
 
 ([ontologia_Class30011] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -1484,10 +1571,12 @@
 		[ontologia_Class27]
 		[ontologia_Class20004]
 		[ontologia_Class20017])
+	(Lactosa TRUE)
 	(Nombre "Ensalada de brotes y berberechos con alioli de ajos asados")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 8.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30012] of  Ingrediente
 
@@ -1495,6 +1584,7 @@
 
 ([ontologia_Class30013] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -1510,10 +1600,12 @@
 		[ontologia_Class10059]
 		[ontologia_Class20122]
 		[ontologia_Class10020])
+	(Lactosa FALSE)
 	(Nombre "Tarta de chocolate blanco, fresas y pistachos")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 7.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class30014] of  Ingrediente
 
@@ -1525,6 +1617,7 @@
 
 ([ontologia_Class30016] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1538,10 +1631,12 @@
 		[ontologia_Class26]
 		[ontologia_Class8]
 		[ontologia_Class10018])
+	(Lactosa TRUE)
 	(Nombre "Pechuga de pavo con salsa de naranja y verduras al horno")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 11.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30017] of  Ingrediente
 
@@ -1549,6 +1644,7 @@
 
 ([ontologia_Class30018] of  Primero%2FSegundo
 
+	(Celiaco FALSE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1557,13 +1653,16 @@
 		[ontologia_Class20068]
 		[ontologia_Class2]
 		[ontologia_Class20117])
+	(Lactosa FALSE)
 	(Nombre "Mini hamburguesas indias")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 15.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30019] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -1573,13 +1672,16 @@
 		[ontologia_Class20048]
 		[ontologia_Class3]
 		[ontologia_Class20017])
+	(Lactosa FALSE)
 	(Nombre "Tomates cherries rellenos con gambas")
-	(pensado+para+poca+gente FALSE)
+	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 7.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30020] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Lacteos)
@@ -1591,10 +1693,12 @@
 		[ontologia_Class63]
 		[ontologia_Class20119]
 		[ontologia_Class62])
+	(Lactosa FALSE)
 	(Nombre "Membrillo a la naranja con yogur infusionado con romero y helado de queso manchego")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 6.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class30021] of  Ingrediente
 
@@ -1602,6 +1706,7 @@
 
 ([ontologia_Class30023] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Vegetales)
@@ -1612,10 +1717,12 @@
 		[ontologia_Class20048]
 		[ontologia_Class10060]
 		[ontologia_Class77])
+	(Lactosa FALSE)
 	(Nombre "Peras asadas al caramelo con chantilly")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 5.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano TRUE))
 
 ([ontologia_Class30024] of  Ingrediente
 
@@ -1623,6 +1730,7 @@
 
 ([ontologia_Class30025] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1633,13 +1741,16 @@
 		[ontologia_Class20041]
 		[ontologia_Class64]
 		[ontologia_Class20048])
+	(Lactosa FALSE)
 	(Nombre "Canelon de pollo en texturas con tartar de verduras de maria marte")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 9.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30026] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Moderna)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Carne)
@@ -1657,10 +1768,12 @@
 		[ontologia_Class10030]
 		[ontologia_Class20048]
 		[ontologia_Class30028])
+	(Lactosa TRUE)
 	(Nombre "Conejo al ajillo con cigalas")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 16.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class30027] of  Ingrediente
 
@@ -1684,6 +1797,7 @@
 
 ([ontologia_Class34] of  Segundo
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pescado)
@@ -1696,10 +1810,12 @@
 		[ontologia_Class8]
 		[ontologia_Class26]
 		[ontologia_Class4])
+	(Lactosa TRUE)
 	(Nombre "Bacalao a la llauna")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 11.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class35] of  Ingrediente
 
@@ -1711,6 +1827,7 @@
 
 ([ontologia_Class38] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Arroz)
@@ -1727,10 +1844,12 @@
 		[ontologia_Class4]
 		[ontologia_Class3]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Paella de marisco")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 15.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class39] of  Ingrediente
 
@@ -1773,6 +1892,7 @@
 
 ([ontologia_Class44] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Legumbres)
@@ -1786,10 +1906,12 @@
 		[ontologia_Class3]
 		[ontologia_Class26]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Butifarra con alubias")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 9.75)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class45] of  Ingrediente
 
@@ -1805,6 +1927,7 @@
 
 ([ontologia_Class48] of  Segundo
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Carne)
@@ -1825,10 +1948,12 @@
 		[ontologia_Class46]
 		[ontologia_Class45]
 		[ontologia_Class53])
+	(Lactosa TRUE)
 	(Nombre "Escudella")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 10.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class49] of  Ingrediente
 
@@ -1872,6 +1997,7 @@
 
 ([ontologia_Class58] of  Primero%2FSegundo
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -1882,11 +2008,13 @@
 		[ontologia_Class4]
 		[ontologia_Class2]
 		[ontologia_Class32])
+	(Lactosa TRUE)
 	(Nombre "Calçots a la brasa")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 8.5)
 	(temperatura caliente)
-	(Temporada Invierno))
+	(Temporada Invierno)
+	(Vegetariano TRUE))
 
 ([ontologia_Class59] of  Ingrediente
 
@@ -1894,6 +2022,7 @@
 
 ([ontologia_Class6] of  Primero
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pan)
@@ -1902,13 +2031,16 @@
 		[ontologia_Class5]
 		[ontologia_Class4]
 		[ontologia_Class3])
+	(Lactosa TRUE)
 	(Nombre "Pan con tomate y jamon")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 4.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano FALSE))
 
 ([ontologia_Class60] of  Primero%2FSegundo
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Pasta)
@@ -1924,10 +2056,12 @@
 		[ontologia_Class33]
 		[ontologia_Class8]
 		[ontologia_Class66])
+	(Lactosa FALSE)
 	(Nombre "Canelones a la catalana")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 6.0)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano FALSE))
 
 ([ontologia_Class61] of  Ingrediente
 
@@ -1955,6 +2089,7 @@
 
 ([ontologia_Class67] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -1966,10 +2101,12 @@
 		[ontologia_Class70]
 		[ontologia_Class71]
 		[ontologia_Class27])
+	(Lactosa FALSE)
 	(Nombre "Crema catalana")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 4.5)
-	(temperatura caliente))
+	(temperatura caliente)
+	(Vegetariano TRUE))
 
 ([ontologia_Class68] of  Ingrediente
 
@@ -1993,6 +2130,7 @@
 
 ([ontologia_Class73] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal Lacteos)
@@ -2002,10 +2140,12 @@
 		[ontologia_Class62]
 		[ontologia_Class21]
 		[ontologia_Class27])
+	(Lactosa FALSE)
 	(Nombre "Mel y mato")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 3.5)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class74] of  Ingrediente
 
@@ -2013,6 +2153,7 @@
 
 ([ontologia_Class75] of  Postre
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal FrutosSecos)
@@ -2025,10 +2166,12 @@
 		[ontologia_Class32]
 		[ontologia_Class57]
 		[ontologia_Class72])
+	(Lactosa TRUE)
 	(Nombre "Musico")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 5.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class76] of  Ingrediente
 
@@ -2052,6 +2195,7 @@
 
 ([ontologia_Class80] of  Postre
 
+	(Celiaco FALSE)
 	(Cocina Regional)
 	(Cubierto Cuchara)
 	(Ingrediente+principal FrutosSecos)
@@ -2063,10 +2207,12 @@
 		[ontologia_Class68]
 		[ontologia_Class25]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Carquinyolis")
 	(pensado+para+poca+gente FALSE)
 	(Precio+de+venta 6.0)
-	(temperatura frio))
+	(temperatura frio)
+	(Vegetariano TRUE))
 
 ([ontologia_Class81] of  Ingrediente
 
@@ -2074,6 +2220,7 @@
 
 ([ontologia_Class9] of  Primero
 
+	(Celiaco TRUE)
 	(Cocina Regional)
 	(Cubierto Tenedor)
 	(Ingrediente+principal Vegetales)
@@ -2083,8 +2230,10 @@
 		[ontologia_Class3]
 		[ontologia_Class4]
 		[ontologia_Class8])
+	(Lactosa TRUE)
 	(Nombre "Escalivada")
 	(pensado+para+poca+gente TRUE)
 	(Precio+de+venta 7.0)
 	(temperatura frio)
-	(Temporada Verano))
+	(Temporada Verano)
+	(Vegetariano TRUE))
